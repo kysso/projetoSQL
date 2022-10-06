@@ -25,16 +25,18 @@ estado varchar(100)
 
 create table tbusuarios(
 codigo int,
-nome varchar(100),
-email varchar(100),
-idade int,
-rg char(12),
-cpf char(14),
-logradouro varchar(100),
-numero char(10),
-bairro varchar(100),
-cidade varchar(50),
-estado varchar(100)
+nome varchar(20),
+senha varchar(10)
+);
+
+
+create table tbprodutos(
+codigo int,
+descricao varchar(150),
+valor decimal(9,2),
+dataEntrada date,
+horaEntrada time,
+quantidade decimal(9,2)
 );
 
 --visualizando as tabelas criadas
@@ -43,3 +45,4 @@ show tables;
 --visualizando as estruturas das tabekas
 desc tbfuncionarios;
 desc tbusuarios;
+desc tbprodutos;
